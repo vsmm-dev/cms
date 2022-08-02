@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login', [ConnectController::class, 'getLogin']);
+Route::get('/login', [ConnectController::class, 'getLogin'])->name('login');
+Route::get('/register', [ConnectController::class, 'getRegister'])->name('register');
