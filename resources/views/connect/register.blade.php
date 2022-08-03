@@ -46,6 +46,8 @@
             </div>
             {!! Form::submit(trans('Register'), ['class' => 'btn btn-success']) !!}
             {!! Form::close() !!}
+
+            @include('errors')
         </div>
         <div class="footer mtop16">
             <a href="{{ url('/login') }}">{{ __("Sign In") }}</a>
