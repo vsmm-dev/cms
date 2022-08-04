@@ -19,5 +19,8 @@ Route::get('/', function () {
 });
 
 Route::get('/login', [ConnectController::class, 'getLogin'])->name('login');
+Route::post('/login', [ConnectController::class, 'postLogin'])->name('login');
+Route::post('/logout', [ConnectController::class, 'getLogout'])->name('logout');
 Route::get('/register', [ConnectController::class, 'getRegister'])->name('register');
 Route::post('/register', [ConnectController::class, 'postRegister'])->name('register');
+

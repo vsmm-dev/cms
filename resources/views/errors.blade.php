@@ -11,7 +11,7 @@
             @endif
             <script>
                 $('.alert').slideDown();
-                setTimeout(function(){ $('.alert').slideUp; }, 10000);
+                setTimeout(function(){ $('.alert').slideUp(); }, 5000);
             </script>
         </div>
     </div>

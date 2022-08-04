@@ -14,14 +14,14 @@
                 <span class="input-group-text">
                     <i class="fa-solid fa-at"></i>
                 </span>
-                {!! Form::email('email', null, ['class' => 'form-control']) !!}
+                {!! Form::email('email', null, ['class' => 'form-control','required']) !!}
             </div>
             <label for="password" class="">{{ __('Password') }}</label>
             <div class="input-group mb-3 mtop8">
                 <span class="input-group-text">
                     <i class="fa-solid fa-key"></i>
                 </span>
-                {!! Form::password('password', ['class' => 'form-control']) !!}
+                {!! Form::password('password', ['class' => 'form-control','required']) !!}
             </div>
             {!! Form::submit(trans('Sign In'), ['class' => 'btn btn-success']) !!}
             {!! Form::close() !!}
